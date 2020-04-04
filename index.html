@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+ <script type="module">
+   //import init, {transform} from "./pkg/string_to_string.js";
+   import init, {transform} from "./pkg/string_to_string.js";
+   async function run() {
+   await init();
+    const result = transform("guru");
+    console.log(result);
+   }
+   run();
+ </script>
+
+</body>
+</html>
