@@ -10,11 +10,17 @@
    import init, {transform} from "./pkg/string_to_string.js";
    async function run() {
    await init();
-    const result = transform("guru");
+   const source = document.getElementById("source");
+    const result = transform(source.value);
     console.log(result);
+    document.getElementById("output").textContent = result;
    }
-   run();
+
+   source.onkeypress = run;
+
  </script>
+  <input id="source" value="guru" ></input>
+  <div id="output"></div>
 
 </body>
 </html>
