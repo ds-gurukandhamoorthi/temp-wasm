@@ -16,10 +16,11 @@
     document.getElementById("output").textContent = result;
    }
 
-   source.onkeypress = run;
+   source.addEventListener("keyup", run, false);
+   source.addEventListener("change", run, false);
 
  </script>
-  <input id="source" value="guru" ></input>
+  <input id="source" value="guru" type="text"></input>
   <div id="output"></div>
 
 </body>
